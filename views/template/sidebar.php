@@ -32,12 +32,33 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="../transaksi/index_transaksi.php" class="nav-link">
+            <a href="#" class="nav-link">
               <i class="nav-icon fas fa-wallet"></i>
               <p>
                 Transaksi keuangan
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+            <li class="nav-item">
+                <a href="../transaksi/index_transaksi.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Semua transaksi</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../pemasukan/index_pemasukan.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pemasukan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="../pengeluaran/index_pengeluaran.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pengeluaran</p>
+                </a>
+              </li>
+            </ul>
           </li>
         </ul>
       </nav>

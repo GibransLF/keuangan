@@ -16,4 +16,20 @@ foreach ($data as $row) {
         $total -= $row['keuangan'];
     }    
 }
+
+// total pemasukan
+$query = "SELECT * FROM transaksi where id_login = '$id' AND tipe = 'pemasukan'";
+$data = mysqli_query($conn, $query);
+$pemasukan = 0;
+foreach ($data as $row) {
+    $pemasukan += $row['keuangan'];
+}
+
+// total pengeluaran
+$query = "SELECT * FROM transaksi where id_login = '$id' AND tipe = 'pengeluaran'";
+$data = mysqli_query($conn, $query);
+$pengeluaran = 0;
+foreach ($data as $row) {
+    $pengeluaran -= $row['keuangan'];
+}
 ?>
